@@ -1,8 +1,4 @@
-sa/user/service/UserService.class
 sa/activities/service/ActivityService.class
 sa/activities/resource/ActivityResource.class
-sa/user/model/User.class
 sa/activities/JAXRSConfiguration.class
 sa/activities/model/Activity.class
-sa/user/resource/UserResource.class
-sa/user/JAXRSConfiguration.class

@@ -2,7 +2,7 @@ package sa.activities.resource;
 
 import sa.activities.model.Activity;
 import sa.activities.service.ActivityService;
-import sa.user.model.User;
+
 
 import javax.ejb.EJB;
 import javax.ws.rs.*;
