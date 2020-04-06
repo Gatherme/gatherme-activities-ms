@@ -31,7 +31,7 @@ public class ActivityService {
         Activity activityToUpdate = entityManager.find(Activity.class, id);
         //activityToUpdate.setAdministrador(activity.getAdministrador());
         //activityToUpdate.setBanner(activity.getBanner());
-        //activityToUpdate.setCategoria(activity.getCategoria());
+        activityToUpdate.setCategoria(activity.getCategoria());
         activityToUpdate.setDescripcion(activity.getDescripcion());
         //activityToUpdate.setFecha(activity.getFecha());
         //activityToUpdate.setHora(activity.getHora());
@@ -39,9 +39,9 @@ public class ActivityService {
         activityToUpdate.setLista_miembros(activity.getLista_miembros());
         //activityToUpdate.setLugar(activity.getLugar());
         activityToUpdate.setNombre(activity.getNombre());
-        //activityToUpdate.setNotas_adicionales(activity.getNotas_adicionales());
-        //activityToUpdate.setRecurrente(activity.getRecurrente());
-        //activityToUpdate.setTags_especificos(activity.getTags_especificos());
+        activityToUpdate.setNotas_adicionales(activity.getNotas_adicionales());
+        activityToUpdate.setRecurrente(activity.isRecurrente());
+        activityToUpdate.setTags_especificos(activity.getTags_especificos());
         return entityManager.merge(activityToUpdate);
     }
     public void deleteActivity(int id) {

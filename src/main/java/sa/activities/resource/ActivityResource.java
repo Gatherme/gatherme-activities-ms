@@ -2,6 +2,7 @@ package sa.activities.resource;
 
 import sa.activities.model.Activity;
 import sa.activities.service.ActivityService;
+import sa.user.model.User;
 
 import javax.ejb.EJB;
 import javax.ws.rs.*;
@@ -21,9 +22,8 @@ public class ActivityResource {
     ActivityService activityService;
 
     @GET
-    public Response  checkActivity(){
-        return Response.status(Response.Status.CREATED).build();
-
+    public List<Activity> getAllActivities(@QueryParam("first") int first, @QueryParam("maxResult") int maxResult) {
+        return activityService.getAllAvtivities(first, maxResult);
     }
 
     @GET
