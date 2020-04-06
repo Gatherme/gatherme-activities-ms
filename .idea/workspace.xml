@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef59418d-1c5c-4b9c-9d46-d58c074046a1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/activities/model/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/activities/model/Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sa/activities/resource/ActivityResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/activities/resource/ActivityResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/user/JAXRSConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/user/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/user/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/user/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/activities/JAXRSConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/activities/model/Activity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/activities/resource/ActivityResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/activities/service/ActivityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/user/JAXRSConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/user/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/user/resource/UserResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/user/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/activities/service/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/activities/service/ActivityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sa/activities/resource/ActivityResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sa/activities/resource/ActivityResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sa/activities/service/ActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sa/activities/service/ActivityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gatherme-activities-ms.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatherme-activities-ms.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/activities/resource/ActivityResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/activities/resource/ActivityResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/activities/service/ActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/activities/service/ActivityService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +52,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586134721735</updated>
-      <workItem from="1586134724003" duration="5014000" />
+      <workItem from="1586134724003" duration="5431000" />
+      <workItem from="1586148746558" duration="2991000" />
+      <workItem from="1586195123349" duration="2445000" />
+      <workItem from="1586197647382" duration="699000" />
     </task>
     <servers />
   </component>
@@ -65,9 +63,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="801" y="187" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1586139254409">
+    <state x="801" y="187" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1586196668939">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="801" y="187" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/67.27.1853.948@67.27.1853.948" timestamp="1586139254409" />
+    <state x="801" y="187" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/67.27.1853.948@67.27.1853.948" timestamp="1586196668939" />
+    <state x="649" y="327" key="com.intellij.ide.util.TipDialog" timestamp="1586197647526">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="649" y="327" key="com.intellij.ide.util.TipDialog/67.27.1853.948@67.27.1853.948" timestamp="1586197647526" />
   </component>
 </project>

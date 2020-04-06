@@ -1,6 +1,7 @@
 package sa.activities.service;
 
 import sa.activities.model.Activity;
+import sa.activities.model.Comment;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -29,15 +30,15 @@ public class ActivityService {
 
     public Activity updateActivity(int id, Activity activity) {
         Activity activityToUpdate = entityManager.find(Activity.class, id);
-        //activityToUpdate.setAdministrador(activity.getAdministrador());
-        //activityToUpdate.setBanner(activity.getBanner());
+        activityToUpdate.setAdministrador(activity.getAdministrador());
+        activityToUpdate.setBanner(activity.getBanner());
         activityToUpdate.setCategoria(activity.getCategoria());
         activityToUpdate.setDescripcion(activity.getDescripcion());
-        //activityToUpdate.setFecha(activity.getFecha());
-        //activityToUpdate.setHora(activity.getHora());
+        activityToUpdate.setFecha(activity.getFecha());
+        activityToUpdate.setHora(activity.getHora());
         activityToUpdate.setInformacion(activity.getInformacion());
         activityToUpdate.setLista_miembros(activity.getLista_miembros());
-        //activityToUpdate.setLugar(activity.getLugar());
+        activityToUpdate.setLugar(activity.getLugar());
         activityToUpdate.setNombre(activity.getNombre());
         activityToUpdate.setNotas_adicionales(activity.getNotas_adicionales());
         activityToUpdate.setRecurrente(activity.isRecurrente());
@@ -47,5 +48,9 @@ public class ActivityService {
     public void deleteActivity(int id) {
         Activity activityToDelete = entityManager.find(Activity.class, id);
         entityManager.remove(activityToDelete);
+    }
+    public  void addComment(int id, Comment comment){
+        Activity activityToUpdate = entityManager.find(Activity.class, id);
+        activityToUpdate.getComments().add(comment);
     }
 }

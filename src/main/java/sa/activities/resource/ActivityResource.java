@@ -1,9 +1,11 @@
 package sa.activities.resource;
 
 import sa.activities.model.Activity;
+import sa.activities.model.Comment;
 import sa.activities.service.ActivityService;
 
 
+import javax.annotation.security.PermitAll;
 import javax.ejb.EJB;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
@@ -32,9 +34,35 @@ public class ActivityResource {
         return activityService.getActivityById(id);
     }
 
+    ///Create a activity
     @POST
-    public Response  createActivity(Activity activity){
+    public Response  createActivity( Activity activity){
         activityService.createActivity(activity);
         return Response.status(Response.Status.CREATED).build();
     }
+
+
+    //update activity
+    @PUT
+    @Path("{id}")
+    public Response updateActivity(@PathParam("id") int id, Activity activity) {
+        activityService.updateActivity(id, activity);
+        return Response.status(Response.Status.NO_CONTENT).build();
+    }
+
+    @PUT
+    @Path("{id}/coment")
+    public Response  commentActivity(@PathParam("id") int id, Comment commet){
+        activityService.addComment(id, commet);
+        return Response.status(Response.Status.CREATED).build();
+    }
+
+    @DELETE
+    @Path("{id}")
+    public Response deleteUser(@PathParam("id") int id) {
+        activityService.deleteActivity(id);
+        return Response.status(Response.Status.OK).build();
+    }
+
+
 }
