@@ -8,7 +8,7 @@ services:
       gatherme-activities-db:
         condition: service_healthy
     healthcheck:
-      test: "curl -I gatherme-activities-ms:4000/gatherme-activities-ms/resources/users/ --fail"
+      test: "curl -I gatherme-activities-ms:4000/gatherme-activities-ms/activities/activity/ --fail"
       interval: 20s
       retries: 10
   gatherme-activities-db:
@@ -20,7 +20,7 @@ services:
       retries: 15
     environment:
       MYSQL_ROOT_PASSWORD: 123
-      MYSQL_DATABASE: auth
+      MYSQL_DATABASE: act
       MYSQL_USER: sa
       MYSQL_PASSWORD: 2020i
     ports:

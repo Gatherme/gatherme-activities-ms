@@ -2,19 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef59418d-1c5c-4b9c-9d46-d58c074046a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/activities/JAXRSConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/activities/JAXRSConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/activities/model/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/activities/model/Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/activities/resource/ActivityResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/activities/resource/ActivityResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/activities/service/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/activities/service/ActivityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/activities/JAXRSConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sa/activities/JAXRSConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/activities/model/Activity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sa/activities/model/Activity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/activities/resource/ActivityResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sa/activities/resource/ActivityResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sa/activities/service/ActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sa/activities/service/ActivityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/tomee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/env/tomee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gatherme-activities-ms.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatherme-activities-ms.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/activities/resource/ActivityResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/activities/resource/ActivityResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/activities/service/ActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/activities/service/ActivityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/user/JAXRSConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/user/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/user/resource/UserResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gatherme-activities-ms/WEB-INF/classes/sa/user/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/classes/sa/user/JAXRSConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/classes/sa/user/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/classes/sa/user/resource/UserResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/classes/sa/user/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/lib/jakarta.persistence-2.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/lib/mysql-connector-java-6.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/lib/org.eclipse.persistence.antlr-2.7.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/lib/org.eclipse.persistence.asm-2.7.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/lib/org.eclipse.persistence.core-2.7.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/lib/org.eclipse.persistence.jpa-2.7.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sa-auth-ms/WEB-INF/lib/org.eclipse.persistence.jpa.jpql-2.7.6.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +70,7 @@
       <workItem from="1586195123349" duration="2445000" />
       <workItem from="1586197647382" duration="699000" />
       <workItem from="1586550649811" duration="3256000" />
+      <workItem from="1586557764376" duration="398000" />
     </task>
     <servers />
   </component>
