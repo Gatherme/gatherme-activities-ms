@@ -14,7 +14,7 @@ import javax.ws.rs.core.UriInfo;
 import java.net.URI;
 import java.util.List;
 
-@Path("/Activity")
+@Path("/activity")
 public class ActivityResource {
 
     @Context
@@ -25,7 +25,7 @@ public class ActivityResource {
 
     @GET
     public List<Activity> getAllActivities(@QueryParam("first") int first, @QueryParam("maxResult") int maxResult) {
-        return activityService.getAllAvtivities(first, maxResult);
+        return activityService.getAllActivities(first, maxResult);
     }
 
     @GET
@@ -49,9 +49,17 @@ public class ActivityResource {
         activityService.updateActivity(id, activity);
         return Response.status(Response.Status.NO_CONTENT).build();
     }
+    @PUT
+    @Path("{id}/administrator/{admi}")
+    public Response updateAdministrator(@PathParam("id") int id, Activity activity, @PathParam("admi") String administrator) {
+        Activity response = activityService.updateAdministrator(administrator,id, activity);
+        if(response != null) return Response.status(Response.Status.NO_CONTENT).build();
+        else return Response.status(Response.Status.NOT_ACCEPTABLE).build();
+    }
+
 
     @PUT
-    @Path("{id}/coment")
+    @Path("{id}/comment")
     public Response  commentActivity(@PathParam("id") int id, Comment commet){
         activityService.addComment(id, commet);
         return Response.status(Response.Status.CREATED).build();
@@ -59,7 +67,7 @@ public class ActivityResource {
 
     @DELETE
     @Path("{id}")
-    public Response deleteUser(@PathParam("id") int id) {
+    public Response deleteActivity(@PathParam("id") int id) {
         activityService.deleteActivity(id);
         return Response.status(Response.Status.OK).build();
     }

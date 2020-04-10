@@ -1,4 +1,5 @@
-/home/johan/Documents/gatherme-activities-ms/src/main/java/sa/user/resource/UserResource.java
-/home/johan/Documents/gatherme-activities-ms/src/main/java/sa/user/JAXRSConfiguration.java
-/home/johan/Documents/gatherme-activities-ms/src/main/java/sa/user/service/UserService.java
-/home/johan/Documents/gatherme-activities-ms/src/main/java/sa/user/model/User.java
+/home/johan/Documents/gatherme-activities-ms/src/main/java/sa/activities/model/Comment.java
+/home/johan/Documents/gatherme-activities-ms/src/main/java/sa/activities/service/ActivityService.java
+/home/johan/Documents/gatherme-activities-ms/src/main/java/sa/activities/JAXRSConfiguration.java
+/home/johan/Documents/gatherme-activities-ms/src/main/java/sa/activities/model/Activity.java
+/home/johan/Documents/gatherme-activities-ms/src/main/java/sa/activities/resource/ActivityResource.java

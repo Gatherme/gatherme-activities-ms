@@ -26,14 +26,14 @@ public class Activity {
     private String hora;
     private String fecha;
     private String banner;
-    private String Administrador;
+
+    private String administrador;
 
     @OneToMany(
             cascade = CascadeType.ALL,
             orphanRemoval = true
     )
     private List<Comment> comments = new ArrayList<>();
-
 
     public List<Comment> getComments() {
         return comments;
@@ -43,6 +43,13 @@ public class Activity {
         this.comments = comments;
     }
 
+    public String getAdministrador() {
+        return administrador;
+    }
+
+    public void setAdministrador(String administrador) {
+        this.administrador = administrador;
+    }
     public String getLugar() {
         return lugar;
     }
@@ -73,14 +80,6 @@ public class Activity {
 
     public void setBanner(String banner) {
         this.banner = banner;
-    }
-
-    public String getAdministrador() {
-        return Administrador;
-    }
-
-    public void setAdministrador(String administrador) {
-        Administrador = administrador;
     }
 
     public String getCategoria() {
