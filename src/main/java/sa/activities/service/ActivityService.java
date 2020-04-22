@@ -24,8 +24,10 @@ public class ActivityService {
         return entityManager.find(Activity.class, id);
     }
 
-    public void createActivity(Activity activity) {
-        entityManager.persist(activity);
+    public Activity createActivity(Activity activity) {
+         entityManager.persist(activity);
+         entityManager.flush(); 
+         return activity;
     }
 
     public Activity updateActivity(int id, Activity activity) {
@@ -42,8 +44,28 @@ public class ActivityService {
         activityToUpdate.setNombre(activity.getNombre());
         activityToUpdate.setNotas_adicionales(activity.getNotas_adicionales());
         activityToUpdate.setRecurrente(activity.isRecurrente());
-        activityToUpdate.setTags_especificos(activity.getTags_especificos());
-        return entityManager.merge(activityToUpdate);
+        activityToUpdate.setTags_especificos(activity.getTags_especificos()); 
+        entityManager.merge(activityToUpdate);
+
+        return activityToUpdate;
+    }
+
+    public Activity addMember(int id, String user){
+        Activity activity = entityManager.find(Activity.class, id);
+        String actual [] = activity.getLista_miembros();
+        String newList [] = new String[actual.length + 1];
+        System.out.println(actual);
+        System.out.println(actual.length);
+        for(int i = 0; i< actual.length; i++){
+            newList[i] = actual[i];
+        }
+        newList[actual.length] = user;
+        activity.setLista_miembros(newList);
+
+        entityManager.merge(activity);
+        entityManager.flush(); 
+        return activity;
+
     }
     public Activity updateAdministrator(String administrator, int id, Activity activity) {
         Activity activityToUpdate = entityManager.find(Activity.class, id);
@@ -67,6 +89,9 @@ public class ActivityService {
             return null;
         }
     }
+
+
+
     public void deleteActivity(int id) {
         Activity activityToDelete = entityManager.find(Activity.class, id);
         entityManager.remove(activityToDelete);

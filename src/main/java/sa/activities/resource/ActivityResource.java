@@ -36,18 +36,24 @@ public class ActivityResource {
 
     ///Create a activity
     @POST
-    public Response  createActivity( Activity activity){
-        activityService.createActivity(activity);
-        return Response.status(Response.Status.CREATED).build();
+    public Activity  createActivity( Activity activity){
+        Activity y = activityService.createActivity(activity);
+        return y;
+
+        //return Response.status(Response.Status.CREATED).build();
     }
 
 
     //update activity
     @PUT
     @Path("{id}")
-    public Response updateActivity(@PathParam("id") int id, Activity activity) {
-        activityService.updateActivity(id, activity);
-        return Response.status(Response.Status.NO_CONTENT).build();
+    public Activity updateActivity(@PathParam("id") int id, Activity activity) {
+        return activityService.updateActivity(id, activity);
+    }
+    @PUT
+    @Path("{id}/add/{user}")
+    public Activity updateActivity(@PathParam("id") int id, @PathParam("user") String user ) {
+        return activityService.addMember(id, user);
     }
     @PUT
     @Path("{id}/administrator/{admi}")
@@ -55,6 +61,7 @@ public class ActivityResource {
         Activity response = activityService.updateAdministrator(administrator,id, activity);
         if(response != null) return Response.status(Response.Status.NO_CONTENT).build();
         else return Response.status(Response.Status.NOT_ACCEPTABLE).build();
+
     }
 
 

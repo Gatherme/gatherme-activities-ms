@@ -39,6 +39,10 @@ public class Activity {
         return comments;
     }
 
+    public int getId(){
+        return id;
+    }
+
     public void setComments(List<Comment> comments) {
         this.comments = comments;
     }
