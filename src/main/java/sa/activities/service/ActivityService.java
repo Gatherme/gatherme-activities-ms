@@ -20,6 +20,11 @@ public class ActivityService {
                 .setFirstResult(first).setMaxResults(maxResult).getResultList();
     }
 
+    public List<Activity> getActivitiesByCategory(String category){
+        return entityManager.createNamedQuery(Activity.FIND_CATEGORY)
+                .setParameter("keyword", "%" + category + "%").getResultList();
+    }
+
     public Activity getActivityById(int id){
         return entityManager.find(Activity.class, id);
     }

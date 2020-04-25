@@ -6,9 +6,13 @@ import java.util.List;
 
 @Entity
 @Table(name = "activities")
-@NamedQueries({@NamedQuery(name = Activity.FIND_ALL, query = "SELECT u FROM Activity u")})
+@NamedQueries({@NamedQuery(name = Activity.FIND_ALL, query = "SELECT u FROM Activity u"),
+                @NamedQuery(name = Activity.FIND_CATEGORY,  query = "SELECT u FROM Activity u WHERE u.categoria like :keyword"),
+        
+        })
 public class Activity {
     public static final String FIND_ALL = "Activity.findAll";
+    public static final String FIND_CATEGORY = "Activity.findByCategory";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +24,7 @@ public class Activity {
     private String[] lista_miembros;
     private String[] tags_especificos;
     private String[] notas_adicionales;
-    private String categoria;
+    public String categoria;
     private boolean recurrente;
     private String lugar;
     private String hora;

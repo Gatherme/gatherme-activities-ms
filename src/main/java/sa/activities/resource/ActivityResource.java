@@ -34,6 +34,12 @@ public class ActivityResource {
         return activityService.getActivityById(id);
     }
 
+    @GET
+    @Path("/category/{category}")
+    public List<Activity> getActivitiesByCategory(@PathParam("category") String category){
+        return activityService.getActivitiesByCategory(category);
+    }
+
     ///Create a activity
     @POST
     public Activity  createActivity( Activity activity){
