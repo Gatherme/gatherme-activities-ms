@@ -24,7 +24,7 @@ public class Activity {
     private String[] lista_miembros;
     private String[] tags_especificos;
     private String[] notas_adicionales;
-    public String categoria;
+    public String [] categoria;
     private boolean recurrente;
     private String lugar;
     private String hora;
@@ -90,11 +90,11 @@ public class Activity {
         this.banner = banner;
     }
 
-    public String getCategoria() {
+    public String[] getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    public void setCategoria(String[] categoria) {
         this.categoria = categoria;
     }
 
