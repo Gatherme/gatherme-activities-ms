@@ -25,6 +25,11 @@ public class ActivityService {
                 .setParameter("keyword", "%" + category + "%").getResultList();
     }
 
+    public List<Activity> getActivitiesByLike(String like){
+        return entityManager.createNamedQuery(Activity.FIND_LIKE)
+                .setParameter("keyword", "%"+ like +"%").getResultList();
+    }
+
     public Activity getActivityById(int id){
         return entityManager.find(Activity.class, id);
     }
@@ -49,7 +54,7 @@ public class ActivityService {
         activityToUpdate.setNombre(activity.getNombre());
         activityToUpdate.setNotas_adicionales(activity.getNotas_adicionales());
         activityToUpdate.setRecurrente(activity.isRecurrente());
-        activityToUpdate.setTags_especificos(activity.getTags_especificos()); 
+        activityToUpdate.setLikes(activity.getLikes()); 
         entityManager.merge(activityToUpdate);
 
         return activityToUpdate;
@@ -88,7 +93,7 @@ public class ActivityService {
             activityToUpdate.setNombre(activity.getNombre());
             activityToUpdate.setNotas_adicionales(activity.getNotas_adicionales());
             activityToUpdate.setRecurrente(activity.isRecurrente());
-            activityToUpdate.setTags_especificos(activity.getTags_especificos());
+            activityToUpdate.setLikes(activity.getLikes());
             return entityManager.merge(activityToUpdate);
         }else{
             return null;

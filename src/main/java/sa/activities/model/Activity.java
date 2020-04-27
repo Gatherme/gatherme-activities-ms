@@ -8,11 +8,13 @@ import java.util.List;
 @Table(name = "activities")
 @NamedQueries({@NamedQuery(name = Activity.FIND_ALL, query = "SELECT u FROM Activity u"),
                 @NamedQuery(name = Activity.FIND_CATEGORY,  query = "SELECT u FROM Activity u WHERE u.categoria like :keyword"),
+                @NamedQuery(name = Activity.FIND_LIKE, query= "SELECT u FROM Activity u  WHERE u.likes like :keyword")
         
         })
 public class Activity {
     public static final String FIND_ALL = "Activity.findAll";
     public static final String FIND_CATEGORY = "Activity.findByCategory";
+    public static final String FIND_LIKE = "Activity,findByLike";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +24,7 @@ public class Activity {
     private String nombre;
     private String descripcion;
     private String[] lista_miembros;
-    private String[] tags_especificos;
+    private String[] likes;
     private String[] notas_adicionales;
     public String [] categoria;
     private boolean recurrente;
@@ -106,12 +108,12 @@ public class Activity {
         this.recurrente = recurrente;
     }
 
-    public String[] getTags_especificos() {
-        return tags_especificos;
+    public String[] getLikes() {
+        return likes;
     }
 
-    public void setTags_especificos(String[] tags_especificos) {
-        this.tags_especificos = tags_especificos;
+    public void setLikes(String[] likes) {
+        this.likes = likes;
     }
 
     public String[] getNotas_adicionales() {

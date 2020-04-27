@@ -40,6 +40,12 @@ public class ActivityResource {
         return activityService.getActivitiesByCategory(category);
     }
 
+    @GET
+    @Path("/like/{like}")
+    public List<Activity> getActivitiesByLike(@PathParam("like") String like){
+        return activityService.getActivitiesByLike(like);
+    }
+
     ///Create a activity
     @POST
     public Activity  createActivity( Activity activity){
